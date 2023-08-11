@@ -3,17 +3,18 @@ import React, { useState } from 'react';
 import NavbarChild from '../NavbarChild/NavbarChild';
 import { Bars3Icon, XMarkIcon, ShoppingBagIcon, HomeModernIcon } from '@heroicons/react/24/solid'
 
-const Navbar = () => {
+const Navigation = () => {
     const [whichIcon, setIcon] = useState(false)
     const navBarItems = [
         { id: 1, label: 'Home', link: '/' },
-        { id: 2, label: 'About', link: '/about' },
-        { id: 3, label: 'Services', link: '/services' },
-        { id: 4, label: 'Contact', link: '/contact' }
+        { id: 2, label: 'Products', link: '/products' },
+        { id: 3, label: 'About', link: '/about' },
+        { id: 4, label: 'Services', link: '/services' },
+        { id: 5, label: 'Contact', link: '/contact' }
     ];
     return (
 
-        <nav className='bg-orange-400 sm:p-6 flex justify-between items-center fixed top-0 w-full z-50'>
+        <nav className=' bg-gray-900 sm:p-2 flex justify-between items-center fixed top-0 w-full z-50'>
             {/* responsive */}
             <div onClick={() => { setIcon(!whichIcon) }} className='md:hidden'>
                 <span>
@@ -38,4 +39,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navigation;

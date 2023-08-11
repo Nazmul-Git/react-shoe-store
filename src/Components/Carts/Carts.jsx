@@ -26,7 +26,7 @@ const Carts = ({ product }) => {
                     product.features.map((feature,idx) => <Features key={idx} feature={feature}></Features>)
                 }
             </div>
-            <button className='text-white text-2xl bg-blue-700 font-semibold rounded-md mt-4 relative p-4 hover:bg-blue-500 hover:font-bold'>Buy Now</button>
+            <button className='text-white text-2xl bg-blue-400 font-semibold rounded-md mt-4 relative p-4 hover:bg-blue-800 hover:font-bold'>Buy Now</button>
 
         </div>
     );
